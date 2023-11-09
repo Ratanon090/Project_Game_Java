@@ -17,7 +17,6 @@ import java.util.List;
 public class LoadSave {
     public static final String PLAYER_ATLAS = "final_sprite.png";
     public static final String LEVEL_ATLAS = "outside_sprites_3.png";
-    public static final String LEVEL_ONE_ATLAS = "level_one_data_final.png";
     public static final String MENU_BUTTONS = "button-atlas.png";
     public static final String MENU_BACKGROUND = "menu-background.png";
     public static final String CRABBY_SPRITE = "enemy_d.png";

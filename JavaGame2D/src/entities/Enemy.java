@@ -113,9 +113,6 @@ public abstract class Enemy extends Entity{
             }
         }
     }
-
-
-
     protected void changeWalkDir() {
         if(walkDir == LEFT)
             walkDir = RIGHT;
@@ -131,9 +128,6 @@ public abstract class Enemy extends Entity{
         active = true;
         airSpeed = 0;
     }
-
-
-
     public boolean isActive(){
         return active;
     }
