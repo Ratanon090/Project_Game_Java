@@ -81,7 +81,7 @@ public class PauseOverlay {
         }
         if(isIn(e, replayB)){
             if(replayB.isMousePressed())
-                System.out.println("Gay");
+                playing.resetAll();
         }
         menuB.resetBools();
         replayB.resetBools();

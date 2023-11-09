@@ -76,12 +76,18 @@ public class Player extends Entity{
         updateAttackBox();
 
         updatePos();
+        if(moving)
+            checkPotionTouched();
         if(attacking)
             checkAttack();
         updateAnimationTick();
         setAnimation();
 
 
+    }
+
+    private void checkPotionTouched() {
+        playing.checkPotionTouched(hitbox);
     }
 
     private void checkAttack() {
@@ -107,8 +113,8 @@ public class Player extends Entity{
     public void render(Graphics g, int lvlOffset){
 
         g.drawImage(animations[state][aniIndex],(int)(hitbox.x-xDrawOffset) - lvlOffset + flipX,(int)(hitbox.y-yDrawOffset),width*flipW,height,null);
-        drawHitbox(g, lvlOffset);
-        drawAttackBox(g,lvlOffset);
+//        drawHitbox(g, lvlOffset);
+//        drawAttackBox(g,lvlOffset);
         drawUI(g);
     }
 
@@ -118,7 +124,6 @@ public class Player extends Entity{
         g.setColor(Color.red);
         g.setFont(new Font("TimesRoman", Font.PLAIN, 40));
         g.drawString(Integer.toString(currentHealth),200,50);
-        g.drawString(Integer.toString(currentScore),200,100);
     }
 
     private void updateAnimationTick() {
@@ -168,12 +173,6 @@ public class Player extends Entity{
     private void resetAniTick(){
         aniTick=0;
         aniIndex=0;
-    }
-    public void updateGame(){
-        updatePos();
-        updateAnimationTick();
-        setAnimation();
-
     }
     private void updatePos() {
         moving = false;

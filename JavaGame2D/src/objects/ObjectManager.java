@@ -38,6 +38,7 @@ public class ObjectManager {
     public void checkObjectHit(Rectangle2D.Float hitbox){
 
     }
+
     public void loadObjects(Level newLevel) {
         potions = newLevel.getPotions();
 
@@ -76,6 +77,10 @@ public class ObjectManager {
                         SALT_WIDTH,
                         SALT_HEIGHT,null);
             }
+    }
+    public void resetAllObjects(){
+        for(Potion p: potions)
+            p.reset();
     }
 
 

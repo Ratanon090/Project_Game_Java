@@ -18,10 +18,10 @@ public class LoadSave {
     public static final String PLAYER_ATLAS = "final_sprite.png";
     public static final String LEVEL_ATLAS = "outside_sprites_3.png";
     public static final String LEVEL_ONE_ATLAS = "level_one_data_final.png";
-    public static final String MENU_BUTTONS = "button_atlas.png";
-    public static final String MENU_BACKGROUND = "menu_background.png";
+    public static final String MENU_BUTTONS = "button-atlas.png";
+    public static final String MENU_BACKGROUND = "menu-background.png";
     public static final String CRABBY_SPRITE = "enemy_d.png";
-    public static final String STATUS_BAR    = "statusbar.png";
+    public static final String STATUS_BAR    = "status.png";
     public static final String COMPLETED_IMG = "completed_sprite.png";
     public static final String PAUSE_BACKGROUND = "pause_menu.png";
     public static final String URM_BUTTON = "urm_button.png";
